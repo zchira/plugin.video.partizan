@@ -1,0 +1,16 @@
+<addon id="plugin.video.partizan" name="Partizan TV" provider-name="zchira" version="0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="plugin.video.youtube" version="4.4.4" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Watch the live stream from Partizan TV</summary>
+    <description lang="en">Partizan TV is the official TV of JSD Partizan (Yugoslav Sports Association Partizan)
+    </description>
+  </extension>
+</addon>
