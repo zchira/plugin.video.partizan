@@ -25,7 +25,8 @@ print "mode"
 
 title  = 'PartizanTV Live'
 url = youtube_url('KSW-L-aZ_OY')
-li = xbmcgui.ListItem(title, iconImage='DefaultVideo.png')
+li = xbmcgui.ListItem(title, iconImage='icon.png')
+# li.setArt({ 'poster': 'poster.png', 'banner' : 'banner.png' })
 li.setProperty('isplayable','true')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 xbmcplugin.endOfDirectory(addon_handle)
