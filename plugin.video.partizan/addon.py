@@ -18,15 +18,13 @@ YOUTUBE_PTN = 'plugin://plugin.video.youtube/play/?video_id=%s'
 def youtube_url(videoid):
     return YOUTUBE_PTN % (videoid)
 
-
-mode = args.get('mode', None)
-
-print "mode"
+#print "mode"
 
 title  = 'PartizanTV Live'
 url = youtube_url('KSW-L-aZ_OY')
 li = xbmcgui.ListItem(title, iconImage='icon.png')
-# li.setArt({ 'poster': 'poster.png', 'banner' : 'banner.png' })
+#li.setArt({ 'poster': 'poster.png', 'banner' : 'banner.png' })
+li.setProperty('fanart_image', 'fanart.jpg')
 li.setProperty('isplayable','true')
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 xbmcplugin.endOfDirectory(addon_handle)
