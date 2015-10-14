@@ -1,4 +1,4 @@
-<addon id="plugin.video.partizan" name="Partizan TV" provider-name="zchira" version="0.1">
+<addon id="plugin.video.partizan" name="Partizan TV" provider-name="zchira" version="0.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="plugin.video.youtube" version="4.4.4" />
