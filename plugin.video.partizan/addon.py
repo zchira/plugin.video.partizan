@@ -3,7 +3,7 @@ import urllib
 import urlparse
 import xbmcgui
 import xbmcplugin
-#import xbmcaddon
+import xbmcaddon
 
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
@@ -20,9 +20,9 @@ def youtube_url(videoid):
     return YOUTUBE_PTN % (videoid)
 
 #print "mode"
-#my_addon = xbmcaddon.Addon('plugin.video.partizan')
-iconImage = "icon.png"  # my_addon.getAddonInfo('icon')
-fanart = "fanart.jpg" # my_addon.getAddonInfo('fanart')
+my_addon = xbmcaddon.Addon('plugin.video.partizan')
+iconImage = my_addon.getAddonInfo('icon')
+fanart = my_addon.getAddonInfo('fanart')
 
 title  = 'PartizanTV Live'
 url = youtube_url('KSW-L-aZ_OY')
